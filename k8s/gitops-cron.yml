@@ -19,4 +19,4 @@ spec:
             command: [sh, -e, -c]
             args:
             - git clone https://github.com/amusa/gitops.git /tmp/example &&
-              find /tmp/example -name '/exercise/*.yml' -exec kubectl apply -f {} \;
+              find /tmp/example/exercise -name '*.yml' -exec kubectl apply -f {} \;
